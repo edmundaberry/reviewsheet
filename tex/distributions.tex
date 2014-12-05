@@ -1,0 +1,35 @@
+\section{Distributions}
+
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c|c|c|c}
+\hline\hline
+\multicolumn{4}{c}{Discrete distributions} \\
+\hline\hline
+Name & PF & $\mathbb{E}$[X] & Var[X] \\
+\hline\hline
+Uniform & $\frac{1}{b - a + 1}$ & $\frac{b+a}{2}$ & $\frac{(b-a+1)^2 - 1}{12}$ \\
+\hline 
+Bernoulli & $\begin{cases} p & \text{if } k = 1 \\ 1 - p & \text{if } k = 0 \end{cases}$ &  $p$ & $p\cdot(1-p)$ \\
+\hline 
+Binomial & $\binom{n}{x}\cdot p^{x}\cdot (1-p)^{n-x}$ & $n \cdot p$ & $n \cdot p \cdot (1-p)$ \\
+\hline 
+Neg. Binomial & $\binom{x-1}{r-1}\cdot p^r\cdot(1-p)^{x-r}$ & $\frac{r}{p}$ & $\frac{r(1-p)}{p^2}$ \\
+\hline 
+Geometric & $p\cdot (1-p)^x$ & $\frac{1}{p}$ & $\frac{1-p}{p^2}$ \\
+\hline 
+Poisson & $\frac{e^{-\lambda t}(\lambda t)^x}{x!}$ & $\lambda t$ & $\lambda t$ \\
+\hline\hline
+\multicolumn{4}{c}{Continuous distributions} \\
+\hline\hline
+Name & PDF & $\mathbb{E}$[X] & Var[X] \\
+\hline\hline
+Uniform & $\frac{1}{b - a}$ & $\frac{b+a}{2}$ & $\frac{(b-a)^2}{12}$ \\
+\hline 
+Normal & $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ & $\mu$ & $\sigma$ \\
+\hline 
+Exponential & $\lambda\cdot e^{-\lambda t}$ & $\frac{1}{\lambda}$ & $\frac{1}{\lambda^2}$ \\
+\hline 
+Cauchy & $\frac{1}{\pi} \cdot \frac{1}{1+x^2}$ & undef. & undef. \\
+\hline\hline
+\end{tabular}
+}

@@ -1,0 +1,15 @@
+\section{Ordinary differential equations}
+
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c|c|c}
+\hline\hline
+Equation & Condition & Solution \\
+\hline\hline
+$y' + P(x)\cdot y = Q(x)$ & $I(x) = e^{\int P(x)\cdot dx}$ & $y = \frac{1}{I(X)}\cdot\int I(X) \cdot Q(X) \cdot dx$ \\
+\hline
+\multirow{3}{*}{$a\cdot y'' + b\cdot y' + c = 0$} & $r_{1}, r_{2} \in \mathbb{R}$, $r_{1} \neq r_{2}$ & $y = c_{1} \cdot e^{r_{1}x} + c_{2} \cdot e^{r_{2}x} $ \\ 
+& $r_{1}, r_{2} \in \mathbb{R}$, $r_{1} = r_{2} = r$ & $y = c_{1} \cdot e^{rx} + c_{2} \cdot x \cdot e^{rx} $ \\ 
+& $r_{1}, r_{2} \in \mathbb{C}$, $r = \alpha \pm i\beta$ &  $ y = e^{\alpha x} \left(c_{1}\sin(\beta x) + c_{2} \cos(\beta x)\right)$ \\
+\hline\hline
+\end{tabular}
+}

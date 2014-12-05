@@ -1,0 +1,27 @@
+\section{Balls and urns}
+
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{c|c|c|c|c}
+\hline
+\hline
+Balls & Urns & Exclusion? & Empty allowed? & N(configurations) \\
+\hline\hline
+D. & D. & With    & Yes & $\frac{u!}{b!}$ \\
+\hline
+D. & D. & With    & No  & $b! = u!$ (if $b = u$) \\
+\hline
+D. & D. & Without & Yes & $u^b$ \\
+\hline
+D. & D. & Without & No  & $\sum_{i=0}^{u-1}(-1)^{i} \binom{u}{i}\left(u-i\right)^b$ \\ 
+\hline
+\hline
+I. & D. & With    & Yes & $\binom{u}{b}$ \\ 
+\hline
+I. & D. & With    & No  & 1 (if $b = u$) \\
+\hline
+I. & D. & Without & Yes & $\binom{b + u - 1}{b}$ \\
+\hline
+I. & D. & Without & No  & $\binom{b - 1}{u - 1}$ \\
+\hline
+\hline
+\end{tabular}}
